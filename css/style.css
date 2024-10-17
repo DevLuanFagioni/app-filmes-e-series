@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  list-style: none;
+  color: #f4f4f4;
+}
+
+header {
+  width: 80%;
+  height: 80px;
+  background-color: rgba(30, 30, 30, 0.8470588235);
+  padding: 0px 30px;
+  border-radius: 8px;
+  position: fixed;
+  top: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: no-wrap;
+}
+header h1 {
+  font-size: 22px;
+}
+header ul {
+  display: flex;
+  gap: 30px;
+  font-size: 18px;
+}
+header ul li:nth-child(1) a {
+  color: #FF4C4C;
+}
+header div button:nth-child(2), header div button:nth-child(1) {
+  padding: 12px 25px;
+  font-size: 18px;
+  border: 1px solid #f4f4f4;
+  border-radius: 8px;
+}
+header div button:nth-child(1) {
+  background: transparent;
+}
+header div button:nth-child(2) {
+  background-color: #9747FF;
+  border: none;
+  margin-left: 20px;
+}
+
+#home {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../imagens/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  padding: 0px 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: no-wrap;
+}
+#home .home-content h1 {
+  font-size: 72px;
+}
+#home .home-content p {
+  font-size: 18px;
+  width: clamp(280px, 60%, 500px);
+  margin: 25px 0px 60px 0px;
+}
+#home .home-content button {
+  padding: 20px 85px;
+  background-color: #9747FF;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+#home .thumb-home {
+  position: relative;
+}
+#home .thumb-home img {
+  width: 320px;
+  height: 320px;
+  border: 2px solid #f4f4f4;
+  border-radius: 8px;
+}
+#home .thumb-home > i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 72px;
+}
+#home .thumb-home p {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=style.css.map */

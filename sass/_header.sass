@@ -1,0 +1,41 @@
+header
+    width: 80%
+    height: 80px
+    background-color: $preto-transparencia
+    padding: 0px 30px
+    border-radius: $arredondamento
+    position: fixed
+    top: 25px
+    left: 50%
+    transform: translateX(-50%)
+    @include flex(row, space-between, center, no-wrap)
+    
+    h1
+        font-size: $fonte-subtitulo
+
+    ul
+        display: flex
+        gap: 30px
+        font-size: $fonte-texto 
+        
+        li:nth-child(1)
+            a
+                color: $primaria        
+           
+    div
+        %estilo
+            padding: 12px 25px
+            font-size: $fonte-texto
+            border: 1px solid $branco
+            border-radius: $arredondamento
+
+        button:nth-child(1)
+            @extend %estilo
+            background: transparent
+
+        button:nth-child(2)
+            @extend %estilo
+            background-color: $secundaria
+            border: none
+            margin-left: 20px
+            

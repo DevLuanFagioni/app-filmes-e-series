@@ -1,0 +1,50 @@
+
+#home
+    width: 100%
+    height: 100vh
+    background-image: url(../imagens/banner.png)
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: right
+    padding: 0px 10%
+    @include flex(row, space-between, center, no-wrap)
+
+    .home-content
+        h1
+            font-size: $fonte-grande
+
+        p
+            font-size: $fonte-texto
+            width: clamp(280px, 60%, 500px)
+            margin: 25px 0px 60px 0px
+
+        button
+            padding: 20px 85px
+            background-color: $secundaria
+            border: none
+            border-radius: $arredondamento
+            cursor: pointer
+
+    .thumb-home
+        position: relative
+
+        img
+            width: 320px
+            height: 320px
+            border: 2px solid $branco
+            border-radius: $arredondamento
+
+        > i
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            font-size: $fonte-grande
+            
+
+        p
+            position: absolute
+            bottom: 10px
+            left: 10px
+            font-size: $fonte-texto
+            font-weight: bold
