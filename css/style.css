@@ -41,6 +41,7 @@
 }
 
 header {
+  z-index: 100;
   width: 80%;
   height: 80px;
   background-color: rgba(30, 30, 30, 0.8470588235);
