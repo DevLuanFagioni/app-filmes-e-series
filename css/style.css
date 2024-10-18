@@ -172,4 +172,33 @@ header div button:nth-child(2) {
   place-items: center;
 }
 
+.catalogo {
+  width: 100%;
+  padding: 60px 10% 0px 10%;
+  background-color: #1E1E1E;
+}
+.catalogo .cards-catalogo {
+  width: 100%;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr 1fr;
+  row-gap: 20px;
+}
+.catalogo .cards-catalogo div {
+  width: 200px;
+  height: 300px;
+}
+.catalogo .cards-catalogo div img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+}
+.catalogo .cards-catalogo div h1 {
+  font-size: 22px;
+  margin-top: 15px;
+  font-weight: 100;
+  text-align: center;
+}
+
 /*# sourceMappingURL=style.css.map */
